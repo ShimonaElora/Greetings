@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class AnimationSceneScript : MonoBehaviour {
 
-    public Text inviteeName;
-    public Text date;
+    public TMPro.TextMeshPro inviteeName;
+    public TMPro.TextMeshPro message;
 
 	// Use this for initialization
 	void Start () {
@@ -14,9 +14,9 @@ public class AnimationSceneScript : MonoBehaviour {
         {
             inviteeName.text = GlobalControl.Instance.inviteeName;
         }
-        if (GlobalControl.Instance != null && GlobalControl.Instance.date != null)
+        if (GlobalControl.Instance != null && GlobalControl.Instance.message != null)
         {
-            date.text = GlobalControl.Instance.date;
+            message.text = GlobalControl.Instance.message;
         }
 	}
 	
